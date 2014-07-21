@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'twilio-ruby'
 require 'json'
+require 'pony'
 
 NUMBER_MAP = JSON.parse(ENV["ADDRESSES"])
 SMTP_URI = URI.parse(ENV["SMTP_URI"])
